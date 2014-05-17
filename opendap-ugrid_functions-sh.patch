@@ -1,0 +1,11 @@
+--- ugrid_functions-1.0.1/configure.ac.orig	2014-04-24 00:13:23.000000000 +0200
++++ ugrid_functions-1.0.1/configure.ac	2014-05-17 20:28:56.995109518 +0200
+@@ -100,7 +100,7 @@
+     version_libgf=`gridfields-config --version | sed 's@gridfields \(.*\)@\1@'`
+     AX_COMPARE_VERSION([$version_libgf], [ge], [$libgf_needed], [libgf_ok='yes'], [libgf_ok='no'])
+ 
+-    if test "$libgf_ok"="no"
++    if test "$libgf_ok" = "no"
+     then
+         AC_MSG_ERROR([must have libgf $libgf_needed or greater, found $version_libgf])
+     fi
