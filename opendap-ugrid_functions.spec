@@ -44,7 +44,7 @@ szerokości, długości i czasu.
 
 %prep
 %setup -q -n ugrid_functions-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 # rebuild autotools for -as-needed to work
